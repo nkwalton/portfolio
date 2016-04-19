@@ -1,0 +1,102 @@
+html {
+     height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+     font-size: 100%;
+ }
+
+body {
+    background-image: url(../assets/images/Wooden-Backdrop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+ 
+.body {
+     font-family: 'PT Sans Caption', 'sans-serif;'; /* sets our font to the "Open Sans" typeface */
+     color: ghostwhite;             /* sets the text color to white */
+     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */ 
+}
+
+/*wrapper with margin: 0 auto, width: 90%, max-width: 1200px*/
+
+a {
+    text-decoration: none;
+}
+
+
+.main-header nav {
+     /* the silver bar at the top of page */
+     padding: .75rem;
+     background-color: #DFE3ED;
+     height: 18px;
+     border-radius: 15px;
+     opacity: .85;
+     /* add a position to keep bar at top of page */
+     
+    
+ }
+
+.main-header nav ul {
+    list-style: none;  /* removes bullets in a list */
+    margin: 1px;
+    font-size: 1.2rem;
+    font-family: 'PT Sans Caption';
+    margin: -.4rem;
+    position: absolute;
+    
+}
+
+.main-header nav ul li {
+    /* style the list items */
+    float: center;
+    display: inline;
+    padding: inherit;   
+}
+
+.main-header nav ul li:hover {
+    color: rgb(95,20,145);
+}
+
+
+.main-header nav a:link {
+    color: #1A1B1F;
+    display: inline-block;
+    padding: 5px; 35px;
+    height: 28px;
+}
+
+#welcome {
+    position: absolute;
+    margin: 17px 5px 5px 30px;
+    opacity: .85;
+    
+}
+
+.container {
+    font-family: 'PT Sans Caption', 'sans-serif;';
+    padding: 30px 30px 30px 30px;
+}
+
+.about-me-paragraph {
+    font-size: .97rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.ion-headphone,
+.ion-model-s,
+.ion-android-boat,
+.ion-android-laptop,
+.ion-android-bicycle {
+    color:rgb(15,11,128);
+    font-size: 3rem;
+    opacity: .54;
+    padding: 18px 24px 18px 24px;
+    display: inline-block;
+    text-align: center;  
+    
+}
+
+
+
+
