@@ -71,35 +71,45 @@ a {
     height: 28px;
 }
 
-#welcome {
-    position: absolute;
-    margin: 17px 5px 5px 30px;
-    opacity: .85;
-    
-}
-
 .container {
     font-family: 'PT Sans Caption', 'sans-serif;';
     padding: 30px 30px 30px 30px;
+}
+
+#welcome {
+    position: absolute;
+    margin: 23px 5px 5px 32px;
+    color: rgb(26,23,28);
+    
 }
 
 .about-me-paragraph {
     font-size: .97rem;
     font-weight: 500;
     line-height: 1.5;
+    color: rgb(66,6,125);
+    font-family: 
 }
 
 .ion-headphone,
+.ion-android-laptop,
 .ion-model-s,
 .ion-android-boat,
-.ion-android-laptop,
 .ion-android-bicycle {
-    color:rgb(15,11,128);
+    color:rgb(66,6,125);
     font-size: 3rem;
-    opacity: .54;
     padding: 18px 24px 18px 24px;
     display: inline-block;
-    text-align: center;  
+    align-self: center;
+}
+
+.portfolio {
+    
+}
+
+.main-footer {
+    
+    
     
 }
 
