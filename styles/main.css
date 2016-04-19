@@ -17,7 +17,13 @@ body {
      min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */ 
 }
 
-/*wrapper with margin: 0 auto, width: 90%, max-width: 1200px*/
+/*add a wrapper to help with dynamically resizing*/
+#wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    min-width: 500px;
+}
 
 a {
     text-decoration: none;
