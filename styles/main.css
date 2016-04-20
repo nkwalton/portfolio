@@ -17,6 +17,10 @@ body {
      min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */ 
 }
 
+a {
+    text-decoration: none;
+}
+
 /*add a wrapper to help with dynamically resizing*/
 #wrapper {
     margin: 0 auto;
@@ -24,11 +28,6 @@ body {
     max-width: 1200px;
     min-width: 500px;
 }
-
-a {
-    text-decoration: none;
-}
-
 
 .main-header nav {
      /* the silver bar at the top of page */
@@ -87,8 +86,8 @@ a {
     font-size: .97rem;
     font-weight: 500;
     line-height: 1.5;
-    color: rgb(66,6,125);
-    font-family: 
+    color: rgb(66,6,125); 
+    background-color: rgba(205,208,212,.6)
 }
 
 .ion-headphone,
@@ -104,12 +103,26 @@ a {
 }
 
 .portfolio {
-    
+      
 }
 
+.portfolio .bloc-jams-pic {
+    height: 230px;
+    width: 330px;
+    cursor:pointer;
+}
+.portfolio .coming-soon {
+    height: 175px;
+    width: 230px;
+    padding: 17px;
+}
+
+
 .main-footer {
-    
-    
+}
+
+.contact-me {
+    font-size: 1.4rem;
     
 }
 
