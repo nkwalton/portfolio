@@ -123,7 +123,20 @@ a {
 
 .contact-me {
     font-size: 1.4rem;
-    
+    padding: .75rem;
+    background-color: #DFE3ED;
+    height: 18px;
+    width: 130px;
+    border-radius: 15px;
+    opacity: .85;
+}
+
+.main-footer .ion-at, .ion-social-github, .ion-iphone{
+    font-size: 3rem;
+    color: rgb(66,6,125);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 
