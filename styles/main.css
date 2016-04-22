@@ -4,19 +4,16 @@ html {
  }
 
 body {
-    background-image: url(../assets/images/Wooden-Backdrop.jpg);
+    /*background-image: url(../assets/images/Wooden-Backdrop.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: cover;*/
+    font-family: 'PT Sans Caption', 'sans-serif;'; /* sets our font to the "Open Sans" typeface */
+    color: ghostwhite;             /* sets the text color to white */
+    min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */ 
 }
  
-.body {
-     font-family: 'PT Sans Caption', 'sans-serif;'; /* sets our font to the "Open Sans" typeface */
-     color: ghostwhite;             /* sets the text color to white */
-     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */ 
-}
-
 a {
     text-decoration: none;
 }
@@ -24,7 +21,6 @@ a {
 /*add a wrapper to help with dynamically resizing*/
 #wrapper {
     margin: 0 auto;
-    width: 90%;
     max-width: 1200px;
     min-width: 500px;
 }
@@ -78,16 +74,16 @@ a {
 #welcome {
     position: absolute;
     margin: 23px 5px 5px 32px;
-    color: rgb(26,23,28);
-    
+    color: #ESESES;
+    opacity:.9
 }
 
 .about-me-paragraph {
-    font-size: .97rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
-    color: rgb(66,6,125); 
-    background-color: rgba(205,208,212,.6)
+    color: #ESESES;
+    opacity:.9;
 }
 
 .ion-headphone,
@@ -95,49 +91,83 @@ a {
 .ion-model-s,
 .ion-android-boat,
 .ion-android-bicycle {
-    color:rgb(66,6,125);
+    color:rgb(54,71,168);
+    opacity:.7;
     font-size: 3rem;
     padding: 18px 24px 18px 24px;
-    display: inline-block;
-    align-self: center;
+    display: inline-block
+/*---figure out how to center icons----*/
 }
 
+/*----parallax start---*/
+.parallax {
+    background: url(../assets/images/dark-wood.jpg) repeat fixed 100%;
+}
+.parallax-inner {
+    padding-bottom: 50%;
+}
+/*----parallax end----*/
+
 .portfolio {
-      
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    
 }
 
 .portfolio .bloc-jams-pic {
-    height: 230px;
-    width: 330px;
+    height: 60%;
+    width:60%;
     cursor:pointer;
+    padding: 7%;
+    
 }
 .portfolio .coming-soon {
-    height: 175px;
-    width: 230px;
-    padding: 17px;
+    height: 50%;
+    width:50%;
+    padding: 7%;
 }
-
+.parallax-2 {
+    background: url(../assets/images/abstract-background.jpeg)
+}
+.parallax-inner-2 {
+    padding-top: 12%;
+    padding-bottom: 15%;
+}
 
 .main-footer {
 }
 
-.contact-me {
+.contact-me { /*silve footer bar */
     font-size: 1.4rem;
-    padding: .75rem;
+    color: #1A1B1F;
     background-color: #DFE3ED;
-    height: 18px;
-    width: 130px;
+    padding: .6rem;
+    height: 16px;
+    width: 140px;
     border-radius: 15px;
     opacity: .85;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
 }
 
 .main-footer .ion-at, .ion-social-github, .ion-iphone{
     font-size: 3rem;
     color: rgb(66,6,125);
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    display:inline-flex;
+    padding: 4%;
+        
 }
+/*----parallax start---*/
+.parallax-3 {
+    background: url(../assets/images/dark-wood.jpg) repeat fixed 100%;
+}
+.parallax-inner-3 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+/*----parallax end----*/
 
 
 
