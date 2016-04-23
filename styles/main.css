@@ -10,19 +10,20 @@ body {
     background-position: center;
     background-size: cover;*/
     font-family: 'PT Sans Caption', 'sans-serif;'; /* sets our font to the "Open Sans" typeface */
-    color: ghostwhite;             /* sets the text color to white */
+    color: ghostwhite; /* sets the text color to white */
     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */ 
 }
  
 a {
     text-decoration: none;
+    color:black; /* nav text color */
 }
 
 /*add a wrapper to help with dynamically resizing*/
 #wrapper {
     margin: 0 auto;
-    max-width: 1200px;
-    min-width: 500px;
+    /*max-width: 1200px;
+    min-width: 500px;*/
 }
 
 .main-header nav {
@@ -32,6 +33,9 @@ a {
      height: 18px;
      border-radius: 15px;
      opacity: .85;
+     width: 80%;
+     margin-left: 20px;
+     
      /* add a position to keep bar at top of page */
      
     
@@ -45,45 +49,47 @@ a {
     margin: -.4rem;
     position: absolute;
     
+    
 }
 
 .main-header nav ul li {
     /* style the list items */
     float: center;
     display: inline;
-    padding: inherit;   
+    padding: inherit;
+    
 }
 
 .main-header nav ul li:hover {
-    color: rgb(95,20,145);
+    cursor:pointer;
 }
 
 
 .main-header nav a:link {
-    color: #1A1B1F;
     display: inline-block;
     padding: 5px; 35px;
     height: 28px;
 }
 
 .container {
-    font-family: 'PT Sans Caption', 'sans-serif;';
+    font-family: 'Kaushan Script', cursive;
     padding: 30px 30px 30px 30px;
+    text-align: center;
 }
 
 #welcome {
     position: absolute;
     margin: 23px 5px 5px 32px;
-    color: #ESESES;
-    opacity:.9
+    opacity:.9;
+    text-align: left;
 }
 
 .about-me-paragraph {
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-weight: 500;
-    line-height: 1.5;
-    color: #ESESES;
+    line-height: 1.8;
     opacity:.9;
+    text-align: left;
 }
 
 .ion-headphone,
@@ -91,8 +97,8 @@ a {
 .ion-model-s,
 .ion-android-boat,
 .ion-android-bicycle {
-    color:rgb(54,71,168);
-    opacity:.7;
+    color:rgb(10,135,245);
+    opacity:.8;
     font-size: 3rem;
     padding: 18px 24px 18px 24px;
     display: inline-block
@@ -112,6 +118,7 @@ a {
     display: flex;
     flex-direction:column;
     text-align: center;
+    font-size:1.8rem;
     
 }
 
@@ -119,14 +126,14 @@ a {
     height: 60%;
     width:60%;
     cursor:pointer;
-    padding: 7%;
-    
+    padding: 7%;    
 }
 .portfolio .coming-soon {
     height: 50%;
     width:50%;
     padding: 7%;
 }
+/*----parallax start---*/
 .parallax-2 {
     background: url(../assets/images/abstract-background.jpeg)
 }
@@ -134,10 +141,12 @@ a {
     padding-top: 12%;
     padding-bottom: 15%;
 }
+/*----parallax end---*/
+
 
 .main-footer {
+    text-align: center;
 }
-
 .contact-me { /*silve footer bar */
     font-size: 1.4rem;
     color: #1A1B1F;
@@ -150,14 +159,14 @@ a {
     text-align: center;
     vertical-align: middle;
     line-height: 16px;
+    margin-left: 20px;
 }
-
 .main-footer .ion-at, .ion-social-github, .ion-iphone{
     font-size: 3rem;
-    color: rgb(66,6,125);
-    display:inline-flex;
+    color: rgb(10,135,245);
+    opacity:.8;
+    display:inline-block;
     padding: 4%;
-        
 }
 /*----parallax start---*/
 .parallax-3 {
