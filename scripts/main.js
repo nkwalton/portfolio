@@ -1,0 +1,1 @@
+$('.parallax-inner').localScroll();
