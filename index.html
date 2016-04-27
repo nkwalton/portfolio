@@ -6,11 +6,19 @@
          <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption">
          <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Kaushan+Script'>
          <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet"  type="text/css" href="styles/magic.css">
          <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+
+         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+         <script src="scripts/jquery.waypoints.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollto/1.4.4/jquery-scrollto.min.js"></script>
+         <script src="scripts/main.js"></script>
+
+         
      </head>
      
      <body class="landing">
-       <div id="wrapper">
         <section class="parallax">
          <div class="parallax-inner">
          <header class="main-header">
@@ -20,16 +28,19 @@
                 <li><a href="#contact-me">Contact</a></li>
          </ul></nav>
          </header>
+         <div id="wrapper">
             
          <h1 id="welcome">Welcome to my portfolio!</h1></br>
          
                 <section class="about-me container" container="clearfix"> 
              <p class="about-me-paragraph"></br></br>Hey everyone, my name is Nick Walton and thanks for visiting my site.  I live in Michigan. My hobbies & interests are..</p>
+             <div class="animate-icons">
              <div class="ion-headphone"></div>
              <div class="ion-model-s"></div>
              <div class="ion-android-boat"></div>
              <div class="ion-android-laptop"></div>
              <div class="ion-android-bicycle"></div>
+             </div>
              <p class="about-me-paragraph">Lately I've been spending most of my time learning computer programming. I have a little bit of prior experience with Ruby and Rails development.  In March I began Bloc's front end web developers course. Computer programming is both interesting and challenging, who knows-maybe some day I'll develope an app for the masses!</p>   
                 </section>
             </div>
@@ -42,8 +53,9 @@
          <section class="portfolio container" container="clearfix">
              <p id="point-description">Projects</p>
                  <div class="background-image">
-                    <img src="assets/images/bloc-jams.jpg"
-                    class="bloc-jams-pic" title="Bloc Jams Music App. This was a music playing appliation I build during the foundation phase of bloc's front-end web development course. It's made with HTML, CSS, JavaScript and jQuery.">
+                    <div id="text" style="display: none">Bloc Jams Music App. This was a music playing appliation I build during the foundation phase of bloc's front-end web development course. It's made with HTML, CSS, JavaScript and jQuery.</div>
+                    <img id="blocJams" src="assets/images/bloc-jams.jpg"
+                    class="bloc-jams-pic">
                     <img src="assets/images/coming-soon.jpg"
                     class="coming-soon">
                     <img src="assets/images/coming-soon.jpg"
@@ -59,11 +71,12 @@
         <div class="parallax-inner-3">
         <footer class="main-footer">
             <p id="contact-me"> Contact me.</p>
-            <a href="mailto:nkwalton@gmail.com" title="Send me an email">
+            <a href="mailto:nkwalton@yahoo.com" title="Send me an email">
                 <div class="ion-at"></div>    
             </a>
 
-            <a href="https://github.com/nkwalton" title="Follow on github">
+                        <!--- the target="_blank" below opens the href in a new page ---->
+            <a href="https://github.com/nkwalton" title="Follow on github" target="_blank">
                 <div class="ion-social-github"></div>
             </a>
             
@@ -73,10 +86,6 @@
         </footer>
        </div>
       </section>
-     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollto/1.4.4/jquery-scrollto.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
-     <script src="main.js"></script>
     </body>
  </html>
 

@@ -22,8 +22,9 @@ a {
 /*add a wrapper to help with dynamically resizing*/
 #wrapper {
     margin: 0 auto;
-    /*max-width: 1200px;
-    min-width: 500px;*/
+    max-width: 1200px;
+    width: 90%;
+    min-width: 500px;
 }
 
 .main-header nav {
@@ -33,31 +34,26 @@ a {
      height: 18px;
      border-radius: 15px;
      opacity: .85;
-     width: 80%;
-     margin-left: 20px;
-     
-     /* add a position to keep bar at top of page */
-     
-    
+     width: 84%;
+     margin-left: 7%;
+     position: fixed;
  }
 
 .main-header nav ul {
-    list-style: none;  /* removes bullets in a list */
+    /* removes bullets in a list */
+    list-style: none;  
     margin: 1px;
     font-size: 1.2rem;
     font-family: 'PT Sans Caption';
     margin: -.4rem;
     position: absolute;
-    
-    
 }
 
 .main-header nav ul li {
     /* style the list items */
     float: center;
     display: inline;
-    padding: inherit;
-    
+    padding: inherit;    
 }
 
 .main-header nav ul li:hover {
@@ -79,7 +75,7 @@ a {
 
 #welcome {
     position: absolute;
-    margin: 23px 5px 5px 32px;
+    margin: 58px 5px 5px 32px;
     opacity:.9;
     text-align: left;
 }
@@ -96,14 +92,26 @@ a {
 .ion-android-laptop,
 .ion-model-s,
 .ion-android-boat,
-.ion-android-bicycle {
+.ion-android-bicycle{
     color:rgb(10,135,245);
     opacity:.8;
     font-size: 3rem;
     padding: 18px 24px 18px 24px;
-    display: inline-block
-/*---figure out how to center icons----*/
+    display: inline-block;
 }
+
+
+.magictime.ion-headphone, 
+.ion-android-laptop,
+.ion-model-s,
+.ion-android-boat,
+.ion-android-bicycle{
+-webkit-animation-duration: 5s;
+-moz-animation-duration: 5s;
+-o-animation-duration: 5s;
+animation-duration: 5s;
+}
+
 
 /*----parallax start---*/
 .parallax {
@@ -118,11 +126,11 @@ a {
     display: flex;
     flex-direction:column;
     text-align: center;
-    font-size:1.8rem;
-    
+    font-size:1.8rem;    
 }
 
 .portfolio .bloc-jams-pic {
+    position: relative;
     height: 60%;
     width:60%;
     cursor:pointer;
@@ -147,7 +155,7 @@ a {
 .main-footer {
     text-align: center;
 }
-.contact-me { /*silve footer bar */
+#contact-me { /*silve footer bar */
     font-size: 1.4rem;
     color: #1A1B1F;
     background-color: #DFE3ED;
@@ -159,7 +167,7 @@ a {
     text-align: center;
     vertical-align: middle;
     line-height: 16px;
-    margin-left: 20px;
+    margin-left: 7%;
 }
 .main-footer .ion-at, .ion-social-github, .ion-iphone{
     font-size: 3rem;
