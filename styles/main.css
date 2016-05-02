@@ -4,11 +4,6 @@ html {
  }
 
 body {
-    /*background-image: url(../assets/images/Wooden-Backdrop.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;*/
     font-family: 'PT Sans Caption', 'sans-serif;'; /* sets our font to the "Open Sans" typeface */
     color: ghostwhite; /* sets the text color to white */
     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */ 
@@ -46,14 +41,13 @@ a {
     font-size: 1.2rem;
     font-family: 'PT Sans Caption';
     margin: -.4rem;
-    position: absolute;
+    
 }
 
 .main-header nav ul li {
     /* style the list items */
-    float: center;
     display: inline;
-    padding: inherit;    
+    margin:  0px 20px;
 }
 
 .main-header nav ul li:hover {
@@ -61,10 +55,68 @@ a {
 }
 
 
+.main-header .highlight {
+    background-color: rgb(10,135,245);
+    border-radius: 15px;
+    opacity:.9;
+}
+
 .main-header nav a:link {
     display: inline-block;
     padding: 5px; 35px;
-    height: 28px;
+    height: 21px;
+}
+
+/*
+.main-header #progress-bar-container {
+    text-align: right;
+    height: 5px;
+    width: 50px;
+    
+}
+*/
+
+progress {
+  /* Positioning */
+  position: fixed;
+  top: 1.5%;
+  right:10%;
+    
+  /* Dimensions */
+  width: 27%;
+  height: 15px;
+  border-radius: 10px; 
+
+  /* Reset the appearance */
+/*
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+*/
+
+    
+    /* the default progress bar color. */
+    progress[value]::-webkit-progress-bar{
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+    
+    /* the color of the (page scrolled/position bar) */
+    -webkit-progress-value {
+  background-color: rgb(10,135,245);
+  border-radius: 10px;
+}
+
+    
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+
+  /* Progress bar value for IE10+ */
+/*  color: black;*/
 }
 
 .container {
@@ -88,6 +140,14 @@ a {
     text-align: left;
 }
 
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+   
+
+}
+
 .ion-headphone,
 .ion-android-laptop,
 .ion-model-s,
@@ -97,19 +157,11 @@ a {
     opacity:.8;
     font-size: 3rem;
     padding: 18px 24px 18px 24px;
-    display: inline-block;
-}
-
-
-.magictime.ion-headphone, 
-.ion-android-laptop,
-.ion-model-s,
-.ion-android-boat,
-.ion-android-bicycle{
--webkit-animation-duration: 5s;
--moz-animation-duration: 5s;
--o-animation-duration: 5s;
-animation-duration: 5s;
+    margin:20px;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 
@@ -123,24 +175,61 @@ animation-duration: 5s;
 /*----parallax end----*/
 
 .portfolio {
-    display: flex;
-    flex-direction:column;
+    float: none;
     text-align: center;
-    font-size:1.8rem;    
+    font-size:1.8rem; 
+    display: block;
 }
 
-.portfolio .bloc-jams-pic {
-    position: relative;
-    height: 60%;
-    width:60%;
-    cursor:pointer;
-    padding: 7%;    
+
+.portfolio .bloc-jams-container {
+    margin: 0 auto;
+    height: 350px;
+    width: 650px;
+    background-image: url(../assets/images/bloc-jams.jpg);
+    background-size: 100%;
+    
 }
-.portfolio .coming-soon {
+
+/* this .text opacity: 0 will make the default text invisible (most transparent), until the hover element is added with opacity of 1 (to show text). */
+.text {
+    opacity:0;
+    height: 350px;
+    width: 650px;
+}
+
+.bloc-jams-pic:hover .text {
+    opacity: 1;
+    color:ghostwhite;
+    font-weight:700;
+    display: flex;
+    align-items:center;
+}
+
+
+.portfolio .container-resizing {
+    margin: 0 auto;
     height: 50%;
-    width:50%;
-    padding: 7%;
+    width: 50%;
 }
+
+.coming-soon-waypoint {
+    padding: 7%;
+    opacity: 0;
+    transition: all 500ms ease-in;
+}
+
+.coming-soon {
+    margin: 0 0 10% 0;
+    height:100%;
+    width:100%;
+}
+
+.js-coming-soon {
+    opacity: 1;
+    
+}
+
 /*----parallax start---*/
 .parallax-2 {
     background: url(../assets/images/abstract-background.jpeg)

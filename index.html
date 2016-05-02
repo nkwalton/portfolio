@@ -22,26 +22,33 @@
         <section class="parallax">
          <div class="parallax-inner">
          <header class="main-header">
-         <nav><ul>  
-                <li class="active"><a href="#">About</a></li>  
-                <li><a href="#point-description">Projects</a></li>
-                <li><a href="#contact-me">Contact</a></li>
+         <nav><ul>
+                <li id="about-item"><a href="#">About</a></li>  
+                <li id="projects-item"><a href="#point-description">Projects</a></li>
+                <li id="contact-item"><a href="#contact-me">Contact</a></li>
+             <li id="progress-bar-container">
+             <progress value="0"></progress>
+             </li>
          </ul></nav>
          </header>
+             
+             
+             <!--    <span class="highlight">   -->
+             
          <div id="wrapper">
             
          <h1 id="welcome">Welcome to my portfolio!</h1></br>
          
-                <section class="about-me container" container="clearfix"> 
+                <section id="about-container" class="about-me-container" container="clearfix"> 
              <p class="about-me-paragraph"></br></br>Hey everyone, my name is Nick Walton and thanks for visiting my site.  I live in Michigan. My hobbies & interests are..</p>
-             <div class="animate-icons">
-             <div class="ion-headphone"></div>
-             <div class="ion-model-s"></div>
-             <div class="ion-android-boat"></div>
-             <div class="ion-android-laptop"></div>
-             <div class="ion-android-bicycle"></div>
-             </div>
-             <p class="about-me-paragraph">Lately I've been spending most of my time learning computer programming. I have a little bit of prior experience with Ruby and Rails development.  In March I began Bloc's front end web developers course. Computer programming is both interesting and challenging, who knows-maybe some day I'll develope an app for the masses!</p>   
+                <div class="icons-container">
+                    <div class="ion-headphone"></div>
+                    <div class="ion-model-s"></div>
+                    <div class="ion-android-boat"></div>
+                    <div class="ion-android-laptop"></div>
+                    <div class="ion-android-bicycle"></div>
+                </div>
+             <p class="about-me-paragraph">Lately I've been spending most of my time learning computer programming. I have a little bit of prior experience with Ruby and Rails development.  In March I began Bloc's front end web developer course. Computer programming is both interesting and challenging, who knows-maybe some day I'll develope an app for the masses!</p>   
                 </section>
             </div>
          </section>
@@ -50,24 +57,29 @@
         
          <section class="parallax-2">
          <div class="parallax-inner-2">
-         <section class="portfolio container" container="clearfix">
+         <section id="projects-container" class="portfolio container" container="clearfix">
              <p id="point-description">Projects</p>
-                 <div class="background-image">
-                    <div id="text" style="display: none">Bloc Jams Music App. This was a music playing appliation I build during the foundation phase of bloc's front-end web development course. It's made with HTML, CSS, JavaScript and jQuery.</div>
-                    <img id="blocJams" src="assets/images/bloc-jams.jpg"
-                    class="bloc-jams-pic">
+                 <div class="bloc-jams-container">
+                     <div class="bloc-jams-pic">
+                        <div class="text"> Bloc Jams Music App. This was a music playing appliation I build during the foundation phase of bloc's front-end web development course. It's made with HTML, CSS, JavaScript and jQuery </div>
+                     </div>
+                     </div>
+                     <div class="container-resizing">
+                     <div class="coming-soon-waypoint">
                     <img src="assets/images/coming-soon.jpg"
                     class="coming-soon">
                     <img src="assets/images/coming-soon.jpg"
-                    class="coming-soon"> 
-             </div>
+                    class="coming-soon">
+                     </div>
+                     </div>
+             
          </section>
          </div>
          </section>
 
 
 
-        <section class="parallax-3">
+        <section id="contact-container" class="parallax-3">
         <div class="parallax-inner-3">
         <footer class="main-footer">
             <p id="contact-me"> Contact me.</p>
@@ -89,4 +101,12 @@
     </body>
  </html>
 
-
+<!---
+<header class="main-header">
+         <nav><ul>  
+                <li class="active"><a href="#">About</a></li>  
+                <li><a href="#point-description">Projects</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+         </ul></nav>
+         </header> 
+---->
