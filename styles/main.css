@@ -32,6 +32,7 @@ a {
      width: 84%;
      margin-left: 7%;
      position: fixed;
+     min-width: 450px;
  }
 
 .main-header nav ul {
@@ -67,14 +68,6 @@ a {
     height: 21px;
 }
 
-/*
-.main-header #progress-bar-container {
-    text-align: right;
-    height: 5px;
-    width: 50px;
-    
-}
-*/
 
 progress {
   /* Positioning */
@@ -85,29 +78,7 @@ progress {
   /* Dimensions */
   width: 27%;
   height: 15px;
-  border-radius: 10px; 
-
-  /* Reset the appearance */
-/*
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-*/
-
-    
-    /* the default progress bar color. */
-    progress[value]::-webkit-progress-bar{
-  background-color: #eee;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-}
-    
-    /* the color of the (page scrolled/position bar) */
-    -webkit-progress-value {
-  background-color: rgb(10,135,245);
-  border-radius: 10px;
-}
-
+  border-radius: 7px; 
     
   /* Get rid of the default border in Firefox/Opera. */
   border: none;
@@ -116,7 +87,28 @@ progress {
   background-color: transparent;
 
   /* Progress bar value for IE10+ */
-/*  color: black;*/
+    /*  color: black;*/
+    }
+
+  progress::-webkit-progress-bar {
+      background-color: transparent;
+    }
+
+
+    progress::-webkit-progress-value {
+        border-radius: 10px;
+        background-color: transparent;
+        background-image: -webkit-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+                      -webkit-linear-gradient(left, rgb(10,135,245), black);
+    }
+
+#progress-bar {
+  background-color: red;
+  width: 50%;
+  display: block;
+  height: inherit;
 }
 
 .container {
