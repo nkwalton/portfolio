@@ -156,6 +156,27 @@ progress {
     animation-duration: 5s;
 }
 
+/*insert myself image*/
+.my-image-container{
+    height: 500px;
+    width: 800px;
+    background-image: url(../assets/images/myself.jpg);
+    background-size: 100%;
+    margin: 0 auto;
+}
+.my-image-container .me {
+    opacity:0;
+    height:500px;
+    width: 800px;
+}
+.my-image-container:hover .me {
+    opacity: 1;
+    color:ghostwhite;
+    font-weight:700;
+    display: flex;
+    align-items:center;
+    padding-left: 120px;
+}
 
 /*----parallax start---*/
 .parallax {
@@ -188,6 +209,7 @@ progress {
     opacity:0;
     height: 350px;
     width: 650px;
+   
 }
 
 .bloc-jams-pic:hover .text {
